@@ -1,0 +1,224 @@
+{
+    "@graph": [
+        {
+            "@type": "Question",
+            "text": "What do you usually serve dip in?",
+            "suggestedAnswer": [
+                {
+                    "@type": "Answer",
+                    "text": "A baking dish."
+                },
+                {
+                    "@type": "Answer",
+                    "text": "A skillet."
+                }
+            ]
+        }
+    ],
+    "@context": "http://schema.org",
+    "url": "https://www.delish.com/cooking/recipe-ideas/a57633/baked-spinach-artichoke-dip-recipe/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Delish",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://assets.hearstapps.com/sites/delish/assets/images/logos/logo-jsonld.58eed96.png",
+            "width": 219,
+            "height": 60
+        }
+    },
+    "@type": "Recipe",
+    "author": {
+        "name": "Lena Abraham",
+        "@type": "Person"
+    },
+    "datePublished": "2018-01-12T21:29:00Z",
+    "headline": "Baked Spinach Artichoke Dip",
+    "image": {
+        "@type": "ImageObject",
+        "height": 600,
+        "thumbnail": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spinach-dip-177-1547837796.jpg?crop=0.668xw:1.00xh;0.332xw,0&resize=100:*",
+        "url": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spinach-dip-177-1547837796.jpg",
+        "width": 900
+    },
+    "mainEntityOfPage": {
+        "@id": "https://www.delish.com/cooking/recipe-ideas/a57633/baked-spinach-artichoke-dip-recipe/",
+        "@type": "WebPage"
+    },
+    "thumbnailUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spinach-dip-177-1547837796.jpg?crop=0.668xw:1.00xh;0.332xw,0&resize=100:*",
+    "dateModified": "2021-10-21T22:41:00Z",
+    "isAccessibleForFree": "False",
+    "hasPart": [
+        {
+            "@type": "WebPageElement",
+            "isAccessibleForFree": "False",
+            "cssSelector": ".content-container"
+        }
+    ],
+    "name": "Baked Spinach Artichoke Dip",
+    "prepTime": "PT10M",
+    "cookTime": "PT0S",
+    "totalTime": "PT45M",
+    "recipeIngredient": [
+        "1 <p>(8-oz.) block&nbsp;cream cheese, softened</p>",
+        "3/4 c. <p>mayonnaise</p>",
+        "3/4 c. <p>sour cream</p>",
+        "1 c. <p>freshly grated Parmesan</p>",
+        "1 c. <p>shredded white cheddar, plus more for topping</p>",
+        "1/2 c. <p>shredded Gruy\u00e8re</p>",
+        "1 <p>(14-oz.) can artichoke hearts, drained and chopped</p>",
+        "1 <p>(10-oz.) package&nbsp;frozen spinach, defrosted and chopped</p>",
+        "2 <p>cloves garlic, minced</p>",
+        "1 tsp. <p>lemon zest</p>",
+        "1/2 tsp. <p>red pepper flakes</p>",
+        "<p>Kosher salt</p>",
+        "<p>Freshly ground black pepper</p>",
+        "<p>Baguette, for serving</p>"
+    ],
+    "recipeInstructions": "Preheat oven to 350\u00b0. In a large bowl, combine all ingredients except baguette. Mix until fully combined and season with salt and pepper. Transfer to a baking dish and smooth top with a spatula. Top with more shredded white cheddar. Bake until bubbly and slightly golden, 30 minutes. If you\u2019d like the dip to develop a more golden top, broil on high for 2 minutes. Serve with baguette on the side, for dipping.",
+    "video": {
+        "@type": "VideoObject",
+        "contentUrl": "https://streaming.hearstdigitalstudios.com/d2d54e00-b482-4210-9360-11846b078f74/video_rover_16x9_1080p_hd_1515812313_61987.mp4",
+        "description": "Don't mess with a classic.",
+        "duration": "PT44S",
+        "embedUrl": "https://glimmer.hearstapps.com/?id=c8293476-ac97-4783-b94e-a091a67eb518",
+        "name": "Baked Spinach And Artichoke Dip Is EVERYTHING",
+        "thumbnailUrl": "https://hips.hearstapps.com/hmg-prod/images/spinach-dip-177-1547837796.jpg",
+        "uploadDate": "2018-01-13T02:56:32.714657Z"
+    },
+    "recipeCuisine": [
+        "American"
+    ],
+    "aggregateRating": {
+        "@context": "http://schema.org/",
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "reviewCount": 6,
+        "worstRating": 1,
+        "bestRating": 5
+    },
+    "review": [
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2020-10-18",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "kat2701"
+            },
+            "reviewBody": "I made with this portion and it was enough for two 1.5\" deep x 8.75\"diameter disposable cake pans.  One to eat now and one freeze (prior to baking) and use for the holiday season for the impromptu happy hour!   It is SO good!!",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2020-06-08",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "BlueBug"
+            },
+            "reviewBody": "Made two small Pyrex dishes tonight and tailored the recipe to suit the portion. It is amazing!! Loved it! Oh and I used hint of lime tortilla chips to dip.",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2019-12-28",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "CyanPumpkin"
+            },
+            "reviewBody": "Made this for 3 different Christmas get togethers and it was a big hit.  Not one bite left in the dish.",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2021-09-02",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "ayd9674"
+            },
+            "reviewBody": "Love this recipe only I use more mayonnaise and less sour cream in the end it ends up creamier . Have people request this dish every weekend plus always have an extra dish for myself! I serve them in French onion soup bowls! Perfect dish for 2!",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2019-07-13",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "PurpleSushi"
+            },
+            "reviewBody": "Very tasty dip! Made it for the second time today. Added extra Gruy\u00e8re as we are big cheese lovers and made some oven baked pita bread to go with it. Definitely a keeper!",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "Review",
+            "datePublished": "2019-11-28",
+            "author": {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "BeautifulVespe"
+            },
+            "reviewBody": "I use frozen artichokes, so I can control the seasonings.  Fresh baby spinach is one of my favorite ingredients, so I swap that out, as well.  This is a great recipe, and makes a lot, it vanished when I made it for my daughter\u2019s birthday party!",
+            "reviewRating": {
+                "@context": "http://schema.org/",
+                "@type": "Rating",
+                "ratingValue": 5,
+                "worstRating": 1,
+                "bestRating": 5
+            }
+        }
+    ],
+    "recipeCategory": [
+        "vegetarian",
+        "Christmas",
+        "New Year's Eve",
+        "Super Bowl",
+        "appetizers"
+    ],
+    "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "444 calories"
+    },
+    "recipeYield": "8-10 servings",
+    "description": "Spinach and Artichoke Dip is the king of all party foods. This super-easy recipe is the perfect appetizer to serve your guests. ",
+    "keywords": "spinach artichoke dip, spinach artichoke dip recipe, easy spinach artichoke dip, spinach and artichoke dip, hot spinach artichoke dip, baked spinach artichoke dip, super bowl recipe, easy recipe, best dip, easy dip, easy dip recipe"
+}

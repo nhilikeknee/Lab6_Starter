@@ -128,7 +128,6 @@ class RecipeCard extends HTMLElement {
     organizationPara.textContent = getOrganization(data);
     card.appendChild(organizationPara);
 
-
     //RATING
     const ratingDiv = document.createElement('div');
     //BUG FIXED, used accidentally used class instead of className
@@ -138,7 +137,7 @@ class RecipeCard extends HTMLElement {
     const starsImg = document.createElement('img');
 
     const ratingValue = searchForKey(data, 'ratingValue');
-    const ratingCount = searchForKey(data, 'ratingCount');
+    const ratingCount = searchForKey(data, 'ratingCount') || searchForKey(data, 'reviewCount'); //review count for delish.com
 
     //calculate stars
     const roundedRating = Math.round(ratingValue);
