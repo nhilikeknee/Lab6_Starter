@@ -1,8 +1,11 @@
 class RecipeCard extends HTMLElement {
   constructor() {
     // Part 1 Expose - TODO
-
+    // Always call super first in constructor
+    super();
     // You'll want to attach the shadow DOM here
+    this.attachShadow({ mode: 'open' });
+
   }
 
   set data(data) {
@@ -100,6 +103,88 @@ class RecipeCard extends HTMLElement {
     // created in the constructor()
 
     // Part 1 Expose - TODO
+    const cardArticle = document.createElement('article');
+
+    //IMG
+    const img = document.createElement('img');
+    const thumbnailUrl = searchForKey(data, 'thumbnailUrl');
+    img.src = thumbnailUrl;
+    img.alt = searchForKey(data, 'headline'); //headline as alternative for name
+    card.appendChild(img);
+
+
+    //TITLE with LINK
+    const titlePara = document.createElement('p');
+    titlePara.className = 'title';
+    const link = document.createElement('a');
+    link.textContent = searchForKey(data, 'headline');
+    link.href = getUrl(data);
+    titlePara.appendChild(link);
+    card.appendChild(titlePara);
+
+    //ORGANIZATION
+    const organizationPara = document.createElement('p');
+    organizationPara.className = 'organization';
+    organizationPara.textContent = getOrganization(data);
+    card.appendChild(organizationPara);
+
+
+    //RATING
+    const ratingDiv = document.createElement('div');
+    //BUG FIXED, used accidentally used class instead of className
+    ratingDiv.className = 'rating';
+    const ratingValueSpan = document.createElement('span');
+    const ratingCountSpan = document.createElement('span');
+    const starsImg = document.createElement('img');
+
+    const ratingValue = searchForKey(data, 'ratingValue');
+    const ratingCount = searchForKey(data, 'ratingCount');
+
+    //calculate stars
+    const roundedRating = Math.round(ratingValue);
+    console.log(roundedRating);
+
+    //with a rating
+    if (ratingValue) {
+      ratingValueSpan.textContent = ratingValue;
+      ratingCountSpan.textContent = ('(' + ratingCount + ')');
+      starsImg.setAttribute('src', `assets/images/icons/${roundedRating}-star.svg`);
+      starsImg.alt = (roundedRating + 'stars');
+      ratingDiv.appendChild(ratingValueSpan);
+      ratingDiv.appendChild(starsImg);
+      ratingDiv.appendChild(ratingCountSpan);
+
+    }
+    //without a rating
+    else {
+      ratingValueSpan.textContent = 'No Reviews';
+      ratingCountSpan.textContent = '';
+      ratingDiv.appendChild(ratingValueSpan);
+      ratingDiv.appendChild(ratingCountSpan);
+    }
+
+    card.appendChild(ratingDiv);
+
+    //TIME
+    const totalTime = searchForKey(data, 'totalTime');
+    const time = document.createElement('time');
+    time.textContent = convertTime(totalTime);
+    card.appendChild(time);
+
+    //INGREDIENTS
+    const ingredientsPara = document.createElement('p');
+    ingredientsPara.className = 'ingredients';
+    const recipeIngredients = searchForKey(data, 'recipeIngredient');
+    //splice ingredients
+    const ingredientsParsed = createIngredientList(recipeIngredients);
+    ingredientsPara.textContent = ingredientsParsed;
+    card.appendChild(ingredientsPara);
+
+
+
+    //append items to root for element to show up
+    this.shadowRoot.appendChild(styleElem);
+    this.shadowRoot.appendChild(card);
   }
 }
 
